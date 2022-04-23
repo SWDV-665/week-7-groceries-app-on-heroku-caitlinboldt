@@ -8,7 +8,7 @@ var methodOverride = require("method-override");
 var cors = require("cors");
 
 // Configuration
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect(encodeURI(process.env.MONGODB_URI));
 
 app.use(bodyParser.urlencoded({ extended: "true" }));
 app.use(bodyParser.json());

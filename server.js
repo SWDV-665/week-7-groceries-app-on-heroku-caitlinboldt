@@ -34,6 +34,11 @@ var Grocery = mongoose.model("Grocery", {
 });
 
 // Get all grocery items
+app.get("/", function (req, res) {
+  res.json({ sucess: true, message: "Hello from root" });
+});
+
+// Get all grocery items
 app.get("/api/groceries", function (req, res) {
   console.log("Listing groceries items...");
 

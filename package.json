@@ -10,10 +10,10 @@
     "node": "14.x"
   },
   "dependencies": {
-    "dotenv": "^16.0.0",
-    "express": "*",
     "body-parser": "*",
     "cors": "2.8.4",
+    "dotenv": "^16.0.0",
+    "express": "*",
     "method-override": "2.3.10",
     "mongoose": "5.1.5",
     "morgan": "1.9.0"
